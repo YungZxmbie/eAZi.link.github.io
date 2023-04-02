@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background: rgb(63,251,211);
+    background: radial-gradient(circle, rgba(63,251,211,1) 0%, rgba(70,92,252,1) 100%);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.header{
+   width: 100%;
+   height: 60px;
+   justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    font-size: 60px; /* Big Font Size*/
+    color: rgb(0, 0, 0);
+    font-family: 'Sedgwick Ave Display', cursive;
+    letter-spacing: 4px;
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+.wrapper{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_wrap .card_item{
+    padding: 15px 25px;
+    width: 25%;
+}
+.card_wrap .card_inner{
+    background-color: #1a188d36;
+    padding: 35px 20px;
+    border-radius: 5px;
+    min-width: 230px;
+    min-height: 318px;
+    width: 100%;
+}
+.card_wrap .card_inner img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+.card_wrap .card_inner .artist_name{
+    color: #000;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+
+}
+.card_wrap .card_inner .streaming_services{
+    color: #c9cccc;
+    font-size: 12px;
+    font-weight: 100;
+    margin: 8px 0 12px;
+    width: 100%;
+    height: 28px;
+}
+
+.card_wrap .card_inner .music_link{
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+.music_link:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background-color: #000;
+}
+.icon{
+    width: 100%;
+    height: 15px;
+
+}
+@media screen and (max-width: 1024px) {
+    .card_wrap .card_item{
+        width: 33%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card_wrap .card_item{
+        width: 50%;
+    }
+    .wrapper .header{
+        font-size: 30px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .card_wrap .card_item{
+        width: 100%;
+    }
+    .wrapper .header{
+        font-size: 20px;
+    }
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .report{
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+  }
+  .socials{
+    padding: 2px;
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+    
+  }
